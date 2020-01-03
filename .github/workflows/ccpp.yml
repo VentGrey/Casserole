@@ -12,7 +12,7 @@ jobs:
     - name: Update & clean system
       run: sudo apt update && sudo apt upgrade && sudo apt autoremove --purge
     - name: Enable Sources Repo
-      run: sudo sed -i '/deb-src/s/^# //' /etc/apt/sources.list && apt update
+      run: sudo sed -i '/deb-src/s/^# //' /etc/apt/sources.list && sudo apt update
     - name: install deps
       run: sudo apt build-dep gnome-recipes
     - name: clean build
