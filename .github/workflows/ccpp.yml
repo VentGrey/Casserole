@@ -9,6 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: Update & clean system
+      run: sudo apt update && sudo apt upgrade && sudo apt autoremove --purge
     - name: install deps
       run: sudo apt build-dep gnome-recipes
 
