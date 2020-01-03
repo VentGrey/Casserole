@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: install deps
-      run: sudo apt install meson gir1.2-gnomeautoar-0.1 gir1.2-gspell-1 gobject-introspection libarchive-dev libcanberra-dev libenchant-dev libgirepository1.0-dev libgnome-autoar-0-0 libgnome-autoar-0-dev libgoa-1.0-dev libgoa-backend-1.0-dev libgspell-1-dev libjson-glib-dev librest-dev libsoup-gnome2.4-dev python3-mako python3-markdown python3-markupsafe
+      run: sudo apt install meson gir1.2-gnomeautoar-0.1 gir1.2-gspell-1 gobject-introspection libarchive-dev libcanberra-dev libenchant-dev libgirepository1.0-dev libgnome-autoar-0-0 libgnome-autoar-0-dev libgoa-1.0-dev libgoa-backend-1.0-dev libgspell-1-dev libjson-glib-dev librest-dev libsoup-gnome2.4-dev python3-mako python3-markdown python3-markupsafe libpulse0 libpulse-dev
 
     - name: clean build
       run: rm -rf build
