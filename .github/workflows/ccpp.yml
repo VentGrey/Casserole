@@ -17,7 +17,7 @@ jobs:
       run: sudo apt build-dep gnome-recipes
     - name: clean build
       run: rm -rf build
-    - name: meson prefix
+    - name: meson prefix --init
       run: meson --prefix /usr build
     - name: ninja build
       run: ninja -C build
